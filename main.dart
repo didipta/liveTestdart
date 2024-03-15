@@ -1,7 +1,6 @@
 import 'Fruits.dart';
 
 void main(){
-
   List<Fruit> fruits=[
     Fruit('Apple','Red', 20),
     Fruit('Banana','yellow', 10),

@@ -1,29 +1,29 @@
 class Fruit {
-  String name;
-  String color;
-  double price;
+  String _name;
+  String _color;
+  double _price;
 
 
-  Fruit(this.name,this.color,  this.price);
+  Fruit(this._name,this._color,  this._price);
 
-  void displayFruit()
+  void _displayFruit()
   {
-    print('Name:$name,Color:$color,Price:\$${price.toStringAsFixed(2)}');
+    print('Name:$_name,Color:$_color,Price:\$${_price.toStringAsFixed(2)}');
   }
 
  static void displayFruitDetails(List<Fruit> fruits){
     for(Fruit fruit in fruits){
-      fruit.displayFruit();
+      fruit._displayFruit();
     }
   }
 
-  void discountCount(double percentage){
-    price=price-(price*(percentage/100));
+  void _discountCount(double percentage){
+    _price=_price-(_price*(percentage/100));
   }
 
   static void applyPriceDiscount(List<Fruit> fruits,double percentage){
     for(Fruit fruit in fruits){
-      fruit.discountCount(percentage);
+      fruit._discountCount(percentage);
     }
   }
 
