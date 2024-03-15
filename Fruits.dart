@@ -6,24 +6,24 @@ class Fruit {
 
   Fruit(this.name,this.color,  this.price);
 
-  void displayfruit()
+  void displayFruit()
   {
     print('Name:$name,Color:$color,Price:\$${price.toStringAsFixed(2)}');
   }
 
  static void displayFruitDetails(List<Fruit> fruits){
     for(Fruit fruit in fruits){
-      fruit.displayfruit();
+      fruit.displayFruit();
     }
   }
 
-  void discountcount(double percentage){
+  void discountCount(double percentage){
     price=price-(price*(percentage/100));
   }
 
   static void applyPriceDiscount(List<Fruit> fruits,double percentage){
     for(Fruit fruit in fruits){
-      fruit.discountcount(percentage);
+      fruit.discountCount(percentage);
     }
   }
 
